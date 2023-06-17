@@ -2,7 +2,7 @@ import express from "express";
 import usuarioRoute from "./routes/usuarioRoutes.js";
 import conectarDB from "./config/db.js";
 import dotenv from "dotenv";
-import cors from 'cors'
+import cors from "cors"
 import proyectoRoute from './routes/proyectoRoutes.js'
 import tareaRoute from './routes/tareaRoutes.js'
 
@@ -15,7 +15,7 @@ dotenv.config();
 conectarDB()
 
 //configurar CORS
-const whitelist = [process.env.FRONTEND_URL];
+const whitelist = [process.env.FRONTEND_URL , process.env.FRONTEND_URL1];
 
 const corsOptions = {
     origin: function (origin, callback) {
