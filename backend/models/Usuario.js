@@ -17,7 +17,7 @@ const usuarioSchema = mongoose.Schema({
         type: String,
         required: true,
         trim: true,
-        unique: true,
+        unique: true
     },
     token: {
         type: String
@@ -25,12 +25,8 @@ const usuarioSchema = mongoose.Schema({
     confirmado: {
         type: Boolean,
         default: false
-    },
-},
-    {
-        timestamps: true,
     }
-);
+}, {timestamps: true});
 
 usuarioSchema.pre('save', async function (next) {
 
@@ -47,9 +43,6 @@ usuarioSchema.methods.comprobarPassword = async function (passwordFormulario) {
 
 }
 
-const Usuario = mongoose.model("usuario", usuarioSchema)
+const Usuario = mongoose.model("Usuario", usuarioSchema)
 
 export default Usuario;
-
-
-

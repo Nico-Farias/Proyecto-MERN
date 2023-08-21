@@ -24,7 +24,7 @@ export const emailRegistro = async (datos) => {
         <p>Tu cuenta ya casi esta lista, solo debes confirmarla en el siguiente enlace:
         </p>
 
-        <a href='${process.env.FRONTEND_URL}/confirmar/${token}'>Confirmar Cuenta</a>
+        <a href='${process.env.FRONTEND_URL1}/confirmar/${token}'>Confirmar Cuenta</a>
 
         <p>Si tu no creaste esta cuenta, puedes ignorar el mensaje</p>
 
@@ -57,7 +57,7 @@ export const emailOlvidePassword = async (datos) => {
         <p>Sigue el siguiente enlace para generar un nuevo password:
         </p>
 
-        <a href='${process.env.FRONTEND_URL}/olvide-password/${token}'>Reestablecer password</a>
+        <a href='${process.env.FRONTEND_URL1}/olvide-password/${token}'>Reestablecer password</a>
 
         <p>Si tu no solicitaste este email, puedes ignorar el mensaje</p>
 
